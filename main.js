@@ -100,16 +100,17 @@ jas de 18 a 35 años
 y poseedor de sacerdocio de 36 años en adelante
 --------------------------------------------------------*/
 
-let edad = 31000;
+let edad = 1;
 
-if (edad <= 11) {
+//primero evaluo si el rango de edad válida. Si no cumple la condicion, entonces termina el programa.
+if (!(edad >=1 && edad <=110)) {
+    console.log("Edad ingrasada incorrecta. Por favor, ingresa una edad válida (entre 1 y 110)");
+} else if (edad >0 && edad <= 11) {         
     console.log("Perteneces a la primaria");
 } else if (edad >= 12 && edad <= 17) {
     console.log("Perteneces a la juventud");
 } else if (edad >= 18 && edad <= 35) {
     console.log("Eres JAS");
-} else if ( edad >=36 && edad <= 110){
-    console.log("Eres de los mayores y poderosos!");
 } else {
-    console.log("Tu edad ingresada '",edad,"' parece ser incorrecta")
+    console.log("Perteneces a los sacerdotes mayores");
 }
